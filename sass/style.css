@@ -1,6 +1,7 @@
 html {
   position: relative;
   height: 100%;
+  margin: 0;
 }
 
 html .header {
@@ -45,7 +46,12 @@ html .top {
   background-image: url("../images/bg2.jpg");
   height: 100%;
   background-size: cover;
-  padding: 5;
   color: white;
+  padding: 10%;
+}
+
+html .top h1 {
+  font-family: 'BebasNeueLight';
+  font-size: 72px;
 }
 /*# sourceMappingURL=style.css.map */
