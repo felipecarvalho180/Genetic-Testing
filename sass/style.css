@@ -3,7 +3,7 @@ html {
   height: 100%;
 }
 
-html #header {
+html .header {
   background-color: #F8F8F8;
   height: 10%;
   width: 100%;
@@ -12,32 +12,40 @@ html #header {
   font-size: 18px;
 }
 
-html #header .container1 {
+html .header .container1 {
   height: 100%;
   width: 100%;
 }
 
-html #header .container1 #toplogo {
+html .header .container1 .toplogo {
   height: 45px;
 }
 
-html #header .container1 .hrig {
+html .header .container1 .hrig {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   padding-left: 10%;
 }
 
-html #header .container1 .hrig a:visited {
+html .header .container1 .hrig a:visited {
   color: #494f90;
 }
 
-html #header .container1 .hrig a:hover {
+html .header .container1 .hrig a:hover {
   color: #000000;
   text-decoration: none;
 }
 
-html #header .container1 .hrig .hrigi {
+html .header .container1 .hrig .hrigi {
   padding: 3.5%;
+}
+
+html .top {
+  background-image: url("../images/bg2.jpg");
+  height: 100%;
+  background-size: cover;
+  padding: 5;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
