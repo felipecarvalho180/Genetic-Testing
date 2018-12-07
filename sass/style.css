@@ -47,10 +47,10 @@ html .top {
   height: 100%;
   background-size: cover;
   color: white;
-  padding: 10%;
+  padding: 5%;
 }
 
-html .top h1 {
+html .top p {
   font-family: 'BebasNeueLight';
   font-size: 72px;
 }
