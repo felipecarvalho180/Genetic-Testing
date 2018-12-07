@@ -29,6 +29,14 @@ html .header .container1 .hrig {
   padding-left: 10%;
 }
 
+html .header .container1 .hrig a:link {
+  color: #494f90;
+}
+
+html .header .container1 .hrig a:activate {
+  color: #494f90;
+}
+
 html .header .container1 .hrig a:visited {
   color: #494f90;
 }
@@ -44,14 +52,41 @@ html .header .container1 .hrig .hrigi {
 
 html .top {
   background-image: url("../images/bg2.jpg");
-  height: 100%;
   background-size: cover;
+  height: 100%;
   color: white;
-  padding: 5%;
+  padding-top: 7%;
+  padding-bottom: 14%;
+  margin: 0;
 }
 
-html .top p {
+html .top .container2 {
+  height: 100%;
+  width: 100%;
+}
+
+html .top .container2 h1 {
   font-family: 'BebasNeueLight';
   font-size: 72px;
+}
+
+html .top .container2 .thinline {
+  background-color: #ffffff;
+  height: 3px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+html .top .container2 .socialtop {
+  margin-top: 5%;
+  width: 100%;
+}
+
+html .top .container2 .socialtop .btn {
+  background-color: #F8F8F8;
+  color: #000000;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=style.css.map */

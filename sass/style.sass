@@ -1,9 +1,11 @@
+@import "_variable.sass"
+
 html
     position: relative
     height: 100%
-    margin: 0 
+    margin: 0
     .header
-        background-color: #F8F8F8
+        background-color: $bgcinzaclaro
         height: 10%
         width: 100%
         margin: 0
@@ -17,8 +19,12 @@ html
             .hrig
                 align-self: center
                 padding-left: 10%
+                a:link 
+                    color: $letrasazuis
+                a:activate
+                    color: $letrasazuis
                 a:visited
-                    color: #494f90
+                    color: $letrasazuis
                 a:hover
                     color: #000000
                     text-decoration: none   
@@ -26,11 +32,38 @@ html
                     padding: 3.5%
     .top
         background-image: url('../images/bg2.jpg')
-        height: 100%
         background-size: cover
+        height: 100%
         color: white
-        padding: 5%
-        p 
-            font-family: 'BebasNeueLight'
-            font-size: 72px
+        padding-top: 7%
+        padding-bottom: 14%
+        margin: 0
+        .container2
+            height: 100%
+            width: 100%
+            h1 
+                font-family: 'BebasNeueLight'
+                font-size: 72px
+                    
+            .thinline
+                background-color: #ffffff
+                height: 3px
+                margin-left: 10%
+                margin-right: 10%
+
+            .socialtop
+                margin-top: 5%
+                width: 100%
+                
+                .btn
+                    background-color: $bgcinzaclaro
+                    color: #000000
+                    margin-left: 2%
+                    margin-right: 2%
+                    margin-top: 2%
+
+                    
+   
+            
+            
                     
