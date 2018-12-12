@@ -4,6 +4,11 @@ html {
   margin: 0;
 }
 
+html hr {
+  margin: 0;
+  background-color: #E0DEDE;
+}
+
 html .header {
   background-color: #F8F8F8;
   height: 10%;
@@ -88,5 +93,76 @@ html .top .container2 .socialtop .btn {
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
+}
+
+html .about1, html .about3 {
+  height: 100%;
+  color: black;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  margin: 0;
+  background-color: #EAE8E8;
+}
+
+html .about1 .thinlinesmall, html .about3 .thinlinesmall {
+  background-color: #CCC9C9;
+  height: 6px;
+  width: 15%;
+  margin-bottom: 5%;
+}
+
+html .about1 h1, html .about3 h1 {
+  font-size: 30px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-bottom: 5%;
+}
+
+html .about1 p, html .about3 p {
+  width: 65%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 18px;
+}
+
+html .about1 img, html .about3 img {
+  width: 100%;
+  height: 100%;
+}
+
+html .about1 #asianbaby, html .about3 #asianbaby {
+  width: 60%;
+  height: 100%;
+}
+
+html .about2 {
+  height: 100%;
+  color: black;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  margin: 0;
+  background-color: #F8F8F8;
+}
+
+html .about2 .thinlinesmall {
+  background-color: #CCC9C9;
+  height: 6px;
+  width: 15%;
+  margin-bottom: 5%;
+}
+
+html .about2 h1 {
+  font-size: 30px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-bottom: 5%;
+}
+
+html .about2 p {
+  width: 100%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 18px;
+}
+
+html .about2 img {
+  width: 50%;
+  height: 80%;
 }
 /*# sourceMappingURL=style.css.map */
