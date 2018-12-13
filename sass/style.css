@@ -107,8 +107,9 @@ html .about1, html .about3 {
 html .about1 .thinlinesmall, html .about3 .thinlinesmall {
   background-color: #CCC9C9;
   height: 6px;
-  width: 15%;
+  width: 100px;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 html .about1 h1, html .about3 h1 {
@@ -118,35 +119,40 @@ html .about1 h1, html .about3 h1 {
 }
 
 html .about1 p, html .about3 p {
-  width: 65%;
+  width: 80%;
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 18px;
+  text-align: justify;
 }
 
 html .about1 img, html .about3 img {
-  width: 100%;
+  width: 70%;
   height: 100%;
 }
 
 html .about1 #asianbaby, html .about3 #asianbaby {
-  width: 60%;
+  width: 70%;
   height: 100%;
 }
 
 html .about2 {
   height: 100%;
+  width: 100%;
   color: black;
   padding-top: 4%;
   padding-bottom: 5%;
   margin: 0;
-  background-color: #F8F8F8;
 }
 
 html .about2 .thinlinesmall {
   background-color: #CCC9C9;
   height: 6px;
-  width: 15%;
+  width: 100px;
   margin-bottom: 5%;
+  margin-top: 5%;
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
 }
 
 html .about2 h1 {
@@ -159,10 +165,11 @@ html .about2 p {
   width: 100%;
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 18px;
+  text-align: justify;
 }
 
 html .about2 img {
-  width: 50%;
-  height: 80%;
+  width: 70%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
