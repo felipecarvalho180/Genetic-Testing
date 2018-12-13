@@ -119,20 +119,22 @@ html .about1 h1, html .about3 h1 {
 }
 
 html .about1 p, html .about3 p {
-  width: 80%;
+  width: 100%;
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 18px;
   text-align: justify;
 }
 
 html .about1 img, html .about3 img {
-  width: 70%;
+  width: 90%;
   height: 100%;
+  margin-left: 5%;
 }
 
 html .about1 #asianbaby, html .about3 #asianbaby {
-  width: 70%;
+  width: 90%;
   height: 100%;
+  margin-left: 5%;
 }
 
 html .about2 {
@@ -150,15 +152,14 @@ html .about2 .thinlinesmall {
   width: 100px;
   margin-bottom: 5%;
   margin-top: 5%;
-  -ms-flex-item-align: right;
-      -ms-grid-row-align: right;
-      align-self: right;
+  margin-left: 2%;
 }
 
 html .about2 h1 {
   font-size: 30px;
   font-family: 'Ubuntu Condensed', sans-serif;
   margin-bottom: 5%;
+  margin-left: 2%;
 }
 
 html .about2 p {
@@ -166,10 +167,12 @@ html .about2 p {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 18px;
   text-align: justify;
+  margin-left: 2%;
 }
 
 html .about2 img {
-  width: 70%;
+  width: 90%;
   height: 100%;
+  margin-left: 5%;
 }
 /*# sourceMappingURL=style.css.map */
