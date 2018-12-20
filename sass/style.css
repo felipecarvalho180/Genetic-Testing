@@ -184,16 +184,6 @@ html .test {
   padding-bottom: 10%;
 }
 
-html .test img {
-  border: 1px solid black;
-  width: 100%;
-}
-
-html .test #sangue {
-  border: 1px solid black;
-  width: 20%;
-}
-
 html .test iframe {
   width: 100%;
   height: 450px;
@@ -203,6 +193,16 @@ html .test iframe {
   position: relative;
   height: 100%;
   margin: 0;
+}
+
+.iframe img {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.iframe #sangue {
+  border: 1px solid black;
+  width: 20%;
 }
 
 .iframe h1 {
@@ -218,14 +218,14 @@ html .test iframe {
   color: #494f90;
 }
 
-.iframe #eyeblue {
+.iframe #eyeblue, .iframe #eyeblue1 {
   height: 50px;
   width: 50px;
   background-color: #006CC3;
   margin-bottom: 5%;
 }
 
-.iframe #eyebrown {
+.iframe #eyebrown, .iframe #eyebrown1 {
   height: 50px;
   width: 50px;
   background-color: #66431D;
@@ -233,7 +233,7 @@ html .test iframe {
   margin-left: 5%;
 }
 
-.iframe #eyegreen {
+.iframe #eyegreen, .iframe #eyegreen1 {
   height: 50px;
   width: 50px;
   background-color: #179A3A;
