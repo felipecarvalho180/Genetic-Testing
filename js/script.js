@@ -1,3 +1,16 @@
+function display() {
+    document.getElementById("test2").style.display = "flex";
+}
+
+function display2() {
+    document.getElementById("test3").style.display = "flex";
+}
+
+function display3() {
+    document.getElementById("test2").style.display = "none";
+    document.getElementById("test3").style.display = "none";
+}
+
 var olho = 0;
 /*olho = 1 azul
 olho = 2 verde
@@ -27,7 +40,7 @@ function olhoVerde() {
 //olhos do pai
 function olhoAzul2() {
     o = Math.floor((Math.random() * 100) + 1);
-    
+    //olho mãe azul
     if(olho == 1 && o > 1){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -40,6 +53,7 @@ function olhoAzul2() {
         combolho = 2;
         return combolho;
     }
+    //olho mãe castanho
     if(olho == 3 && o <= 50){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -52,6 +66,7 @@ function olhoAzul2() {
         combolho = 3;
         return combolho;
     }
+    //olho mãe verde
     if(olho == 2 && o <= 50){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -68,6 +83,7 @@ function olhoAzul2() {
 
 function olhoCast2() {
     o = Math.floor((Math.random() * 100) + 1);
+    //olho mãe azul
     if(olho == 1 && o > 50){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -80,6 +96,7 @@ function olhoCast2() {
         combolho = 3;
         return combolho;
     }
+    //olho mãe castanho
     if(olho == 3 && o <= 12){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -98,6 +115,7 @@ function olhoCast2() {
         combolho = 3;
         return combolho;
     }
+    //olho mãe verde
     if(olho == 2 && o <= 12){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -120,6 +138,7 @@ function olhoCast2() {
 
 function olhoVerde2() {
     o = Math.floor((Math.random() * 100) + 1);
+    //olho mãe azul
     if(olho == 1 && o >= 50){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -132,6 +151,7 @@ function olhoVerde2() {
         combolho = 2;
         return combolho;
     }
+    //olho mãe castanho
     if(olho == 3 && o <= 12){
         document.getElementById("baby").src = "images/bebepadrao olho azul.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
@@ -150,6 +170,7 @@ function olhoVerde2() {
         combolho = 3;
         return combolho;
     }
+    //olho mãe verde
     if(olho == 2 && o == 1){
         document.getElementById("baby").src = "images/bebepadrao olho castanho.jpg";
         document.getElementById("baby2").src = "images/bebepadrao olho castanho.jpg";
@@ -197,6 +218,7 @@ function peleBranca2() {
     if(combolho == 0){
         alert("Por Favor, selecione a cor dos olhos!")
     }
+    //pele mãe branca
     if(combolho == 1 && pele == 1){
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
     }
@@ -206,6 +228,7 @@ function peleBranca2() {
     if(combolho == 3 && pele == 1){
         document.getElementById("baby2").src = "images/bebepadrao olho castanho.jpg";
     }
+    //pele mãe morena
     if(combolho == 1 && o <= 50 && pele == 2){
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
     }
@@ -224,6 +247,7 @@ function peleBranca2() {
     if(combolho == 3 && o > 50 && pele == 2){
         document.getElementById("baby2").src = "images/bebepadraomulato olho castanho.jpg";
     }
+    //pele mãe negra
     if(combolho == 1 && o <= 33 && pele == 3){
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
     }
@@ -258,6 +282,7 @@ function peleMorena2() {
     if(combolho == 0){
         alert("Por Favor, selecione a cor dos olhos!")
     }
+    //pele mãe morena
     if(combolho == 1 && pele == 2){
         document.getElementById("baby2").src = "images/bebepadraomulato olho azul.jpg";
     }
@@ -267,6 +292,7 @@ function peleMorena2() {
     if(combolho == 3 && pele == 2){
         document.getElementById("baby2").src = "images/bebepadraomulato olho castanho.jpg";
     }
+    //pele mãe branca
     if(combolho == 1 && o <= 50 && pele == 1){
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
     }
@@ -285,6 +311,7 @@ function peleMorena2() {
     if(combolho == 3 && o > 50 && pele == 1){
         document.getElementById("baby2").src = "images/bebepadraomulato olho castanho.jpg";
     }
+    //pele mãe negra
     if(combolho == 1 && o <= 50 && pele == 3){
         document.getElementById("baby2").src = "images/bebepadraonegro olho azul.jpg";
     }
@@ -310,6 +337,7 @@ function peleNegra2() {
     if(combolho == 0){
         alert("Por Favor, selecione a cor dos olhos!")
     }
+    //pele mãe negra
     if(combolho == 1 && pele == 3){
         document.getElementById("baby2").src = "images/bebepadraonegro olho azul.jpg";
     }
@@ -319,6 +347,7 @@ function peleNegra2() {
     if(combolho == 3 && pele == 3){
         document.getElementById("baby2").src = "images/bebepadraonegro olho castanho.jpg";
     }
+    //pele mãe morena
     if(combolho == 1 && o <= 50 && pele == 2){
         document.getElementById("baby2").src = "images/bebepadraonegro olho azul.jpg";
     }
@@ -337,6 +366,7 @@ function peleNegra2() {
     if(combolho == 3 && o > 50 && pele == 2){
         document.getElementById("baby2").src = "images/bebepadraomulato olho castanho.jpg";
     }
+    //pele mãe branca
     if(combolho == 1 && o <= 33 && pele == 1){
         document.getElementById("baby2").src = "images/bebepadrao olho azul.jpg";
     }
@@ -363,5 +393,205 @@ function peleNegra2() {
     }
     if(combolho == 3 && o > 66 && pele == 1){
         document.getElementById("baby2").src = "images/bebepadraonegro olho castanho.jpg";
+    }
+}
+
+//Tipo sanguineo
+var sangue;
+/*
+1 = A+
+2 = A-
+3 = B+
+4 = B-
+5 = AB+
+6 = AB-
+7 = O+
+8 = O- 
+*/
+
+function sangueAp() {
+    sangue = 1;
+    return sangue;
+}
+
+function sangueAn() {
+    sangue = 2;
+    return sangue;
+}
+
+function sangueBp() {
+    sangue = 3;
+    return sangue;
+}
+
+function sangueBn() {
+    sangue = 4;
+    return sangue;
+}
+
+function sangueABp() {
+    sangue = 5;
+    return sangue;
+}
+
+function sangueABn() {
+    sangue = 6;
+    return sangue;
+}
+
+function sangueOp() {
+    sangue = 7;
+    return sangue;
+}
+
+function sangueOn() {
+    sangue = 8;
+    return sangue;
+}
+
+function sangueAp2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+    //sangue mãe A+
+    if (sangue == 1 && o <= 25 && q > 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q > 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 25 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && o <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q > 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 2 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 25 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 3 && o <= 25 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 50 && q > 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    if (sangue == 3 && o <= 25 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 75 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 3 && o <= 25 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 100 && q > 75){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 4 && o <= 50 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 50 && q > 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    if (sangue == 4 && o <= 50 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 75 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 4 && o <= 50 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 100 && q > 75){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 25 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 5 && o <= 25 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 5 && o <= 25 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe O+
+    if (sangue == 7 && o <= 25 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 7 && o > 25 && q > 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 7 && o <= 25 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 7 && o > 25 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe O-
+    if (sangue == 8 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 8 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 8 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 8 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
     }
 }

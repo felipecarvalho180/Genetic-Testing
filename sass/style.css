@@ -182,15 +182,25 @@ html .about2 img {
   color: black;
   padding-top: 10%;
   padding-bottom: 10%;
+  font-family: 'BebasNeueRegular';
+  font-size: 22px;
 }
 
 .iframe #test {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .iframe #test2 {
-  margin-top: 20%;
+  display: none;
+  margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.iframe #test3 {
+  display: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
 }
 
 .iframe img {
@@ -198,9 +208,15 @@ html .about2 img {
   width: 100%;
 }
 
+.iframe #continue {
+  margin-top: 30%;
+  margin-left: 15%;
+}
+
 .iframe #sangue {
   border: 1px solid black;
-  width: 20%;
+  width: 50%;
+  margin-left: 10%;
 }
 
 .iframe h1 {
@@ -244,7 +260,6 @@ html .about2 img {
   width: 50px;
   background-color: #CAACA4;
   margin-bottom: 5%;
-  margin-left: 5%;
 }
 
 .iframe #skinbrunette {
@@ -267,7 +282,6 @@ html .about2 img {
   height: 50px;
   width: 50px;
   margin-bottom: 5%;
-  margin-left: 5%;
   background-image: url("../images/A+.jpg");
   background-size: cover;
 }
