@@ -449,6 +449,7 @@ function sangueOn() {
     return sangue;
 }
 
+//sangue pai A+
 function sangueAp2() {
     //sorteio RH+ e RH-
     o = Math.floor((Math.random() * 100) + 1);
@@ -593,5 +594,831 @@ function sangueAp2() {
     }
     if (sangue == 8 && o > 50 && q <= 50){
         document.getElementById("sangue").src = "images/O+.jpg";
+    }
+}
+
+//sangue do pai A-
+function sangueAn2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+    //sangue mãe A+
+    if (sangue == 1 && o <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q > 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && q > 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 3 && o <= 50 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 50 && q > 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    if (sangue == 3 && o <= 50 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 75 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 3 && o <= 50 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 100 && q > 75){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 4 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 4 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 4 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 5 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 5 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    //sangue mãe O+
+    if (sangue == 7 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 7 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 7 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 7 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe O-
+    if (sangue == 8 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 8 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+}
+
+//sangue pai B+
+function sangueBp2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+
+    //sangue mãe A+
+    if (sangue == 1 && o <= 25 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 25 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 50 && q > 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    if (sangue == 1 && o <= 25 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 75 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 1 && o <= 25 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 100 && q > 75){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 2 && o <= 50 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 50 && q > 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    if (sangue == 2 && o <= 50 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 75 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 2 && o <= 50 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 100 && q > 75){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 25 && q > 25) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q > 25){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 3 && o <= 25 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && o <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q > 25){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 4 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 25 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 5 && o <= 25 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 5 && o <= 25 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe O+
+    if (sangue == 7 && o <= 25 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 7 && o > 25 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 7 && o <= 25 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 7 && o > 25 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe O-
+    if (sangue == 8 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 8 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 8 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 8 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }    
+}
+
+//sangue pai B-
+function sangueBn2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+
+    //sangue mãe A+
+    if (sangue == 1 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 50 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 50 && q > 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    if (sangue == 1 && o <= 50 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 75 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 1 && o <= 50 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 100 && q > 75){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && q <= 25) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && q <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 2 && q <= 75 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 2 && q <= 100 && q > 75) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 50 && q > 25) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q > 25){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 3 && o <= 50 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 25){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && q > 25) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 4 && q <= 25) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 5 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 5 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 6 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 6 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    //sangue mãe O+
+    if (sangue == 7 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 7 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 7 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 7 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe O-
+    if (sangue == 8 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 8 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+}
+
+//sangue pai AB+
+function sangueABp2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+
+    //sangue mãe A+
+    if (sangue == 1 && o <= 25 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 25 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 1 && o <= 25 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 2 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 2 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 25 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 3 && o <= 25 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 3 && o <= 25 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 4 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 4 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 25 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 5 && o <= 25 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 5 && o <= 25 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe O+
+    if (sangue == 7 && o <= 25 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 7 && o > 25 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 7 && o <= 25 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 7 && o > 25 && q <= 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    //sangue mãe O-
+    if (sangue == 8 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 8 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 8 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 8 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+}
+
+//sangue AB-
+function sangueABn2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+
+    //sangue mãe A+
+    if (sangue == 1 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 1 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 2 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 3 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 3 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 4 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 4 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 50 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 33){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 5 && o <= 50 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 66 && q > 33){
+        document.getElementById("sangue").src = "images/AB+.jpg";
+    }
+    if (sangue == 5 && o <= 50 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 100 && q > 66){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && q <= 33) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 6 && q <= 66 && q > 33) {
+        document.getElementById("sangue").src = "images/AB-.jpg";
+    }
+    if (sangue == 6 && q <= 100 && q > 66) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    //sangue O+
+    if (sangue == 7 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 7 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 7 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 7 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    //sangue O-
+    if (sangue == 8 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 8 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+}
+
+//sangue pai O+
+function sangueOp2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+
+    //sangue mãe A+
+    if (sangue == 1 && o <= 25 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q > 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 25 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 1 && o > 25 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 2 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 2 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 25 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 3 && o <= 25 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 3 && o > 25 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 4 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 4 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 25 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 5 && o <= 25 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 25 && q <= 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 6 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 6 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    //sangue mãe O+
+    if (sangue == 7 && o <= 25 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 7 && o > 25 && q > 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe O-
+    if (sangue == 8 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 8 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+}
+
+//sangue pai O-
+function sangueOn2() {
+    //sorteio RH+ e RH-
+    o = Math.floor((Math.random() * 100) + 1);
+    //sorteio tipo sanguineo
+    q = Math.floor((Math.random() * 100) + 1);
+    
+    //sangue mãe A+
+    if (sangue == 1 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    if (sangue == 1 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 1 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe A-
+    if (sangue == 2 && q > 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 2 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    //sangue mãe B+
+    if (sangue == 3 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 3 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 3 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe B-
+    if (sangue == 4 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 4 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    //sangue mãe AB+
+    if (sangue == 5 && o <= 50 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/B+.jpg";
+    }
+    if (sangue == 5 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    if (sangue == 5 && o > 50 && q <= 50){
+        document.getElementById("sangue").src = "images/A+.jpg";
+    }
+    //sangue mãe AB-
+    if (sangue == 6 && q > 50) {
+        document.getElementById("sangue").src = "images/B-.jpg";
+    }
+    if (sangue == 6 && q <= 50) {
+        document.getElementById("sangue").src = "images/A-.jpg";
+    }
+    //sangue mãe O+
+    if (sangue == 7 && o <= 50 && q <= 50) {
+        document.getElementById("sangue").src = "images/O-.jpg";
+    }
+    if (sangue == 7 && o > 50 && q > 50){
+        document.getElementById("sangue").src = "images/O+.jpg";
+    }
+    //sangue mãe O-
+    if (sangue == 8) {
+        document.getElementById("sangue").src = "images/O-.jpg";
     }
 }

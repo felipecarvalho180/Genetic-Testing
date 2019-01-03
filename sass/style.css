@@ -2,6 +2,7 @@ html {
   position: relative;
   height: 100%;
   margin: 0;
+  cursor: default;
 }
 
 html hr {
@@ -176,70 +177,69 @@ html .about2 img {
   margin-left: 5%;
 }
 
-.iframe {
+.testgene {
   height: 100%;
   width: 100%;
   color: black;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   font-family: 'BebasNeueRegular';
   font-size: 22px;
 }
 
-.iframe #test {
+.testgene #test {
   margin-bottom: 2%;
 }
 
-.iframe #test2 {
+.testgene #test2 {
   display: none;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.iframe #test3 {
+.testgene #test3 {
   display: none;
   margin-top: 5%;
   margin-bottom: 5%;
   width: 80%;
 }
 
-.iframe img {
+.testgene img {
   border: 1px solid black;
   width: 100%;
 }
 
-.iframe #continue {
+.testgene #continue {
   margin-top: 30%;
   margin-left: 15%;
 }
 
-.iframe #sangue {
-  border: 1px solid black;
+.testgene #sangue {
   width: 50%;
   margin-left: 10%;
 }
 
-.iframe h1 {
+.testgene h1 {
   font-family: 'BebasNeueRegular';
   font-size: 22px;
   color: black;
   margin-bottom: 5%;
 }
 
-.iframe #features {
+.testgene #features {
   font-family: 'BebasNeueRegular';
   font-size: 22px;
   color: #494f90;
 }
 
-.iframe #eyeblue, .iframe #eyeblue1 {
+.testgene #eyeblue, .testgene #eyeblue1 {
   height: 50px;
   width: 50px;
   background-color: #006CC3;
   margin-bottom: 5%;
 }
 
-.iframe #eyebrown, .iframe #eyebrown1 {
+.testgene #eyebrown, .testgene #eyebrown1 {
   height: 50px;
   width: 50px;
   background-color: #66431D;
@@ -247,7 +247,7 @@ html .about2 img {
   margin-left: 5%;
 }
 
-.iframe #eyegreen, .iframe #eyegreen1 {
+.testgene #eyegreen, .testgene #eyegreen1 {
   height: 50px;
   width: 50px;
   background-color: #179A3A;
@@ -255,14 +255,14 @@ html .about2 img {
   margin-left: 5%;
 }
 
-.iframe #skinwhite {
+.testgene #skinwhite {
   height: 50px;
   width: 50px;
   background-color: #CAACA4;
   margin-bottom: 5%;
 }
 
-.iframe #skinbrunette {
+.testgene #skinbrunette {
   height: 50px;
   width: 50px;
   background-color: #874E42;
@@ -270,7 +270,7 @@ html .about2 img {
   margin-left: 5%;
 }
 
-.iframe #skinblack {
+.testgene #skinblack {
   height: 50px;
   width: 50px;
   background-color: #582A24;
@@ -278,7 +278,7 @@ html .about2 img {
   margin-left: 5%;
 }
 
-.iframe #ap {
+.testgene #ap {
   height: 50px;
   width: 50px;
   margin-bottom: 5%;
@@ -286,73 +286,108 @@ html .about2 img {
   background-size: cover;
 }
 
-.iframe #a- {
+.testgene #a- {
   height: 50px;
   width: 50px;
-  background-color: #582A24;
   margin-bottom: 5%;
   margin-left: 5%;
   background-image: url("../images/A-.jpg");
   background-size: cover;
 }
 
-.iframe #bp {
+.testgene #bp {
   height: 50px;
   width: 50px;
-  background-color: #582A24;
   margin-bottom: 5%;
   margin-left: 5%;
   background-image: url("../images/B+.jpg");
   background-size: cover;
 }
 
-.iframe #b- {
+.testgene #b- {
   height: 50px;
   width: 50px;
-  background-color: #582A24;
   margin-bottom: 5%;
   margin-left: 5%;
   background-image: url("../images/B-.jpg");
   background-size: cover;
 }
 
-.iframe #abp {
+.testgene #abp {
   height: 50px;
   width: 50px;
-  background-color: #582A24;
   margin-bottom: 5%;
   margin-left: 5%;
   background-image: url("../images/AB+.jpg");
   background-size: cover;
 }
 
-.iframe #ab- {
+.testgene #ab- {
   height: 50px;
   width: 50px;
-  background-color: #582A24;
   margin-bottom: 5%;
   margin-left: 5%;
   background-image: url("../images/AB-.jpg");
   background-size: cover;
 }
 
-.iframe #op {
+.testgene #op {
   height: 50px;
   width: 50px;
-  background-color: #582A24;
   margin-bottom: 5%;
   margin-left: 5%;
   background-image: url("../images/O+.jpg");
   background-size: cover;
 }
 
-.iframe #o- {
+.testgene #o- {
   height: 50px;
   width: 50px;
-  background-color: #582A24;
   margin-bottom: 5%;
   margin-left: 5%;
   background-image: url("../images/O-.jpg");
   background-size: cover;
+}
+
+.footer {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.footer #linkf {
+  margin-top: 10%;
+  padding: 10%;
+}
+
+.footer #linkf a {
+  margin: 5%;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  font-size: 20px;
+}
+
+.footer #linkf a:link {
+  color: #494f90;
+}
+
+.footer #linkf a:activate {
+  color: #494f90;
+}
+
+.footer #linkf a:visited {
+  color: #494f90;
+}
+
+.footer #linkf a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer #linkf p {
+  font-size: 12px;
+  margin: 5%;
+  color: #CCC9C9;
 }
 /*# sourceMappingURL=style.css.map */

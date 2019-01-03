@@ -17,7 +17,7 @@
 </head>
 <body>
     <!--Header-->
-    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 header">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 header" id="home">
         <div class="container1">
             <div class="row">
                 <!--Left Itens-->
@@ -31,9 +31,9 @@
                 <!--Right Itens-->
                 <div class="col-md-4 col-xs-2 col-sm-5 col-lg-4 hrig">
                     <center>
-                    <a href="" target="default" class="hrigi">About</a>
-                    <a href="" target="default" class="hrigi">Test</a>
-                    <a href="" target="default" class="hrigi">Contact</a>
+                    <a href="#about" class="hrigi">About</a>
+                    <a href="#test" class="hrigi">Test</a>
+                    <a href="#contact" class="hrigi">Contact</a>
                     </center> 
                 </div>
             </div>
@@ -57,16 +57,16 @@
             <!--Social Medias-->
             <div class="row">
                 <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 socialtop text-center">
-                    <button type="button" class="col-md-4 col-xs-12 col-sm-12 col-lg-3 btn btn-primary btn-lg"><img src="images/twitter-logo-button.png">&nbsp TWITTER</button>   
-                    <button type="button" class="col-md-4 col-xs-12 col-sm-12 col-lg-3 btn btn-primary btn-lg"><img src="images/github-logo.png" class="isocial">&nbsp GITHUB</button>
-                    <button type="button" class="col-md-4 col-xs-12 col-sm-12 col-lg-3 btn btn-primary btn-lg"><img src="images/linkedin-sign.png" class="isocial">&nbsp LINKEDIN</button>
+                    <a href="https://twitter.com/" target="default"><button type="button" class="col-md-4 col-xs-12 col-sm-12 col-lg-3 btn btn-primary btn-lg"><img src="images/twitter-logo-button.png">&nbsp TWITTER</button></a>  
+                    <a href="https://github.com/" target="default"><button type="button" class="col-md-4 col-xs-12 col-sm-12 col-lg-3 btn btn-primary btn-lg"><img src="images/github-logo.png" class="isocial">&nbsp GITHUB</button></a>
+                    <a href="https://br.linkedin.com/" target="default"><button type="button" class="col-md-4 col-xs-12 col-sm-12 col-lg-3 btn btn-primary btn-lg"><img src="images/linkedin-sign.png" class="isocial">&nbsp LINKEDIN</button></a>
                 </div>      
             </div>
         </div>
     </div>
 
     <!--About-->
-    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 about1">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 about1" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-xs-6 col-sm-12 col-lg-6">
@@ -125,7 +125,7 @@
     <hr>
 
     <!--Test-->
-    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 iframe">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 testgene" id="test">
         <div class="container">
             <div class="row" id="test">
                 <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6">
@@ -190,13 +190,13 @@
                     <div>
                         <h1 id="features">Father's Features:</h1>
                         <button type="button" class="btn btn-primary" id="ap" onclick="sangueAp2();">
-                        <button type="button" class="btn btn-primary" id="a-">
-                        <button type="button" class="btn btn-primary" id="bp">
-                        <button type="button" class="btn btn-primary" id="b-">
-                        <button type="button" class="btn btn-primary" id="abp">
-                        <button type="button" class="btn btn-primary" id="ab-">
-                        <button type="button" class="btn btn-primary" id="op">
-                        <button type="button" class="btn btn-primary" id="o-">
+                        <button type="button" class="btn btn-primary" id="a-" onclick="sangueAn2();">
+                        <button type="button" class="btn btn-primary" id="bp" onclick="sangueBp2();">
+                        <button type="button" class="btn btn-primary" id="b-" onclick="sangueBn2();">
+                        <button type="button" class="btn btn-primary" id="abp" onclick="sangueABp2();">
+                        <button type="button" class="btn btn-primary" id="ab-" onclick="sangueABn2();">
+                        <button type="button" class="btn btn-primary" id="op" onclick="sangueOp2();">
+                        <button type="button" class="btn btn-primary" id="o-" onclick="sangueOn2();">
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 text-center align-self-center">
@@ -207,6 +207,34 @@
             </div>
         </div>
     </div>
+
+    <!--Footer-->
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <!--Left Itens-->
+                <div class="col-md-4 col-xs-4 col-sm-12 col-lg-4 text-center">
+                    <div id="linkf">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#test">Test</a>
+                        <p>Copyright © All Rights Reserved</p>
+                    </div>
+                </div>
+                <!--Middle Division-->
+                <div class="col-md-4 col-xs-4 col-sm-12 col-lg-4"></div>
+                <!--Right Itens-->
+                <div class="col-md-4 col-xs-4 col-sm-12 col-lg-4 text-center">
+                    <div id="linkf">
+                        <a href="https://twitter.com/" target="default"><img src="images/twitter-logo-button.png" alt=""></a>
+                        <a href="https://github.com/" target="default"><img src="images/github-logo.png" alt=""></a>
+                        <a href="https://br.linkedin.com/" target="default"><img src="images/linkedin-sign.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
     <script src="js/script.js"></script>
 </body>
 </html>
